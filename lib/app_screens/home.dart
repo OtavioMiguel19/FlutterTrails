@@ -9,20 +9,27 @@ class Home extends StatelessWidget {
           color: Colors.deepPurple,
           child: Column(
             children: <Widget>[
-              Text(
-                "La",
-                style: TextStyle(decoration: TextDecoration.none),
-                textDirection: TextDirection.ltr,
+            Text(
+            "La",
+            style: TextStyle(decoration: TextDecoration.none),
+            textDirection: TextDirection.ltr,
+          ),
+          Text(
+            "Flight",
+            style: TextStyle(decoration: TextDecoration.none),
+            textDirection: TextDirection.ltr,
+          ),
+          BuyTicketsButton(),
+          Material(
+            child: TextFormField(
+              obscureText: true,
+              decoration: InputDecoration(
+                  border: InputBorder.none,
+                  labelText: 'Enter your username',
               ),
-              Text(
-                "Flight",
-                style: TextStyle(decoration: TextDecoration.none),
-                textDirection: TextDirection.ltr,
-              ),
-              BuyTicketsButton()
+            ),)
             ],
-          )),
-    );
+          )),);
   }
 }
 
